@@ -1,0 +1,18 @@
+@font-face { font-family: "Young Serif"; src: url("YoungSerif-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Courier Prime"; src: url("CourierPrime-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Courier Prime"; font-weight: 700; src: url("CourierPrime-Bold.ttf") format("truetype"); font-display: swap; }
+:root { --paper: #F2ECDF; --card: #FBF8F1; --ink: #1F1A14; --soft: #6E665A; --rule: #D3CAB8; --stamp: #E04A2B; }
+@media (prefers-color-scheme: dark) { :root { --paper: #1A1814; --card: #24211C; --ink: #EDE6D6; --soft: #A59D8D; --rule: #3B362D; --stamp: #F2643F; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 "Courier Prime", ui-monospace, Menlo, monospace; }
+main { max-width: 640px; margin: 40px auto; padding: 32px 28px 40px; background: var(--card);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 98% 100%, 96% calc(100% - 8px), 94% 100%, 92% calc(100% - 8px), 90% 100%, 88% calc(100% - 8px), 86% 100%, 84% calc(100% - 8px), 82% 100%, 80% calc(100% - 8px), 78% 100%, 76% calc(100% - 8px), 74% 100%, 72% calc(100% - 8px), 70% 100%, 68% calc(100% - 8px), 66% 100%, 64% calc(100% - 8px), 62% 100%, 60% calc(100% - 8px), 58% 100%, 56% calc(100% - 8px), 54% 100%, 52% calc(100% - 8px), 50% 100%, 48% calc(100% - 8px), 46% 100%, 44% calc(100% - 8px), 42% 100%, 40% calc(100% - 8px), 38% 100%, 36% calc(100% - 8px), 34% 100%, 32% calc(100% - 8px), 30% 100%, 28% calc(100% - 8px), 26% 100%, 24% calc(100% - 8px), 22% 100%, 20% calc(100% - 8px), 18% 100%, 16% calc(100% - 8px), 14% 100%, 12% calc(100% - 8px), 10% 100%, 8% calc(100% - 8px), 6% 100%, 4% calc(100% - 8px), 2% 100%, 0 calc(100% - 8px)); }
+@media (max-width: 680px) { main { margin: 0; min-height: 100vh; padding: 28px 18px 40px; } }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+header img { width: 44px; height: 44px; border-radius: 10px; }
+header a { font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--ink); text-decoration: none; }
+h1 { font: 400 40px/1.15 "Young Serif", Georgia, serif; margin: 0 0 16px; }
+h2 { font: 700 13px/1.4 "Courier Prime", monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--soft); margin: 32px 0 6px; padding-top: 18px; border-top: 1px dashed var(--rule); }
+a { color: var(--stamp); }
+.lede { font-size: 18px; }
+footer { margin-top: 40px; padding-top: 18px; border-top: 1px dashed var(--rule); font-size: 14px; color: var(--soft); }
